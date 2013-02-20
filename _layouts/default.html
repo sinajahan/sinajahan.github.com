@@ -9,14 +9,9 @@
 
 <!-- bootstrap -->
 <link href="http://sinajahan.com/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="http://sinajahan.com/css/main.css" rel="stylesheet" media="screen">
 </head>
 <body>
-
-<!-- ClickTale Top part -->
-<script type="text/javascript">
-var WRInitTime=(new Date()).getTime();
-</script>
-<!-- ClickTale end of Top part -->
 
 
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,7 +22,7 @@ var WRInitTime=(new Date()).getTime();
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="#">Sina Jahan</a>
+      <a class="brand" href="/">Sina Jahan</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="active"><a href="#">Home</a></li>
@@ -39,98 +34,23 @@ var WRInitTime=(new Date()).getTime();
   </div>
 </div>
 
-<br>
-<br>
-<br>
-
-<style type="text/css">
-
-/* Sticky footer styles
--------------------------------------------------- */
-
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
-}
-
-/* Set the fixed height of the footer here */
-#push,
-#footer {
-  height: 60px;
-}
-#footer {
-  background-color: #f5f5f5;
-}
-
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-#wrap > .container {
-  padding-top: 60px;
-}
-.container .credit {
-  margin: 20px 0;
-}
-
-code {
-  font-size: 80%;
-}
-
-</style>
-
-
-
-<div class="container">
-  {{ content }}
-
-  <div class="footer">
-    <div class="contact">
-      <p>
-      Sina Jahan<br />
-      Software Consultant
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-      <a href="http://github.com/sinajahan/">github.com/sinajahan</a><br />
-      <a href="http://twitter.com/sinajahan/">twitter.com/sinajahan</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/sina-jahan">
-        <img src="/img/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
+<div id="wrap">
+  <div class="container">
+    {{ content }}
   </div>
+
   <div id="push"></div>
-  <div id="footer">
-    <div class="container">
-      <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
-    </div>
-  </div> 
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p>Sina Jahan Software Consultant</p>
+    <a href="http://github.com/sinajahan/">github.com/sinajahan</a><br />
+    <a href="http://twitter.com/sinajahan/">twitter.com/sinajahan</a><br />
+    <a href="http://feeds.feedburner.com/sina-jahan">
+      <img src="/img/rss.png" alt="Subscribe to RSS Feed" />
+    </a>
+  </div>
 </div>
 
 <script src="http://sinajahan.com/js/bootstrap.min.js"></script>
