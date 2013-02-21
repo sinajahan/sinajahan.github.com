@@ -1,3 +1,12 @@
+body {
+  background: #D9D1C2 url('/img/bg.png');
+}
+
+.thumbnail {
+  background-color: white;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -7,9 +16,6 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
-body {
-  background: #D9D1C2 url('/img/bg.png');
-}
 
 /* Wrapper for page content to push down footer */
 #wrap {
