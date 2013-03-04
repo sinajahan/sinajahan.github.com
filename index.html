@@ -4,53 +4,51 @@ title: Sina Jahan
 ---
 
 <div id="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
   <div class="row-fluid">
     <ul class="thumbnails">
       <li class="span12">
       <div class="thumbnail">
-        <img src="http://www.thewallpapers.org/photo/57267/idea_wallpaper.jpg" >
+        <img src="/img/posts/{{ site.posts.last.code }}.png" >
         <div class="caption">
-          <h3>Latest Post</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="{{ site.posts.last.url }}">
+            <h3>{{ site.posts.last.title }}</h3>
+          </a>
+          <p>{{ site.posts.last.content }}</p>
         </div>
       </div>
       </li>
     </ul>
   </div>
+  {% for post in site.posts %}
   <div class="row-fluid">
     <ul class="thumbnails">
-      <li class="span4">
-      <div class="thumbnail">
-        <img src="http://www.thewallpapers.org/photo/57267/idea_wallpaper.jpg" >
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <li class="span6">
+        <div class="thumbnail">
+          <img src="/img/posts/{{ post.code }}.png" >
+          <div class="caption">
+            <a href="{{ site.posts.url }}">
+              <h3>{{ post.title }}</h3>
+              <span>{{ post.date | date_to_string }}</span>
+            </a>
+            <p>{{ post.content }}</p>
+          </div>
         </div>
-      </div>
       </li>
-      <li class="span4">
-      <div class="thumbnail">
-        <img src="http://www.thewallpapers.org/photo/57267/idea_wallpaper.jpg" >
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <li class="span6">
+        <div class="thumbnail">
+          <img src="/img/posts/{{ post.code }}.png" >
+          <div class="caption">
+            <a href="{{ post.url }}">
+              <h3>{{ post.title }}</h3>
+              <span>{{ post.date | date_to_string }}</span>
+            </a>
+            <p>{{ post.content }}</p>
+          </div>
         </div>
-      </div>
-      </li>
-      <li class="span4">
-      <div class="thumbnail">
-        <img src="http://www.thewallpapers.org/photo/57267/idea_wallpaper.jpg" >
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
       </li>
     </ul>
   </div>
+
+  {% endfor %}
+
 </div>
