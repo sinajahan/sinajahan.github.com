@@ -11,6 +11,7 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
   <link href="/css/main.css" rel="stylesheet" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -36,7 +37,25 @@
     </div>
   </div>
 </div>
-
+<div class="row" id="top-me">
+  <div class="container">
+    <div class="span4">
+      <!--<img id="sina" src="/img/sina.jpg" class="img-circle">-->
+    </div>
+    <div class="span6">
+      <h1>HELLO, I'M SINA.</h1>
+      <h1>I CREATE PRODUCTS.</h1>
+      <p>
+        I’m a freelance software developer located in Toronto, ON with 8 years of experience designing, implementing, and maintaining commercial and enterprise applications for government, banks, and web startups.
+      </p>
+      <p>
+        I have been a frequent speaker and attendee at technical conferences, particularly those focused on the Ruby programming language and Java, published a few articles around different development stacks.
+      </p>
+      <br/>
+      <h4>A LITTLE MORE ABOUT ME »</h4>
+    </div>
+  </div>
+</div>
 <div id="wrap">
   <div class="container">
     {{ content }}
@@ -62,5 +81,18 @@
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39279055-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

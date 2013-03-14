@@ -1,3 +1,34 @@
+#top-me {
+  padding-top: 5em;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+  /*background-color: PURPLE;*/
+  color: lightgray;
+  background: url('http://twitter.github.com/bootstrap/assets/img/bs-docs-masthead-pattern.png') repeat center center;
+
+  background: #482566; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #482566 0%, #720039 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#482566), color-stop(100%,#720039)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #482566 0%,#720039 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #482566 0%,#720039 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #482566 0%,#720039 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #482566 0%,#720039 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482566', endColorstr='#720039',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#sina{
+  width: 70%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sintony', sans-serif;
+}
+
+
+
+
+
 body {
   background: #D9D1C2 url('/img/bg.png');
 }
