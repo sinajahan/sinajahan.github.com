@@ -1,13 +1,17 @@
 ---
-layout: default
+layout: no-intro
 ---
 <div id="post">
 
-  <div class="row-fluid thumbnails">
-    <div class="image-container">
-      <img class="post-image" src="/img/posts/{{ code }}.png">
+  <div class="row">
+    <div class="span12">
+      <div class="image-container">
+        <img class="post-image" src="/img/posts/{{ page.code }}.png">
+      </div>
+      <div id="content">
+        {{ content }}
+      </div>
     </div>
-    {{ content }}
   </div>
 
 
