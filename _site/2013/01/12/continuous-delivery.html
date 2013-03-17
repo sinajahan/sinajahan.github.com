@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Continuous Delivery</title>
+  <meta name="author" content="Sina Jahan"/>
+  <link href="http://feeds.feedburner.com/sina-jahan" rel="alternate" title="Sina Jahan" type="application/atom+xml"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+  <link href="/css/main.css" rel="stylesheet" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<div class="row" id="top-me">
+  <div class="container">
+    <div class="span4">
+      <!--<img id="sina" src="/img/sina.jpg" class="img-circle">-->
+    </div>
+    <div class="span6">
+      <h1>HELLO, I'M SINA.</h1>
+      <h1>I CREATE PRODUCTS.</h1>
+      <p>
+        I’m a freelance software developer located in Toronto, ON with 8 years of experience designing, implementing, and maintaining commercial and enterprise applications for government, banks, and web startups.
+      </p>
+      <p>
+        I have been a frequent speaker and attendee at technical conferences, particularly those focused on the Ruby programming language and Java, published a few articles around different development stacks.
+      </p>
+      <br/>
+      <h4>A LITTLE MORE ABOUT ME »</h4>
+    </div>
+  </div>
+</div>
+<div id="wrap">
+  <div class="container">
+    <div id="post">
+<h1>Continuous Delivery</h1>
+
+<p>Let's talk about delivery</p>
+
+<h2>1: The Problem of Delivering Software</h2>
+
+<p>Antipattern: Deploying Software Manually
+Antipattern: Deploying to a Production-like Environment Only after Development Is Complete
+Antipattern: Manual Configuration Management of Production Environments
+Every Change Should Trigger the Feedback Process
+What Are the Benefits?
+  Reducing Errors, Lowering Stress, Deployment Flexibility, Practice Makes Perfect</p>
+
+<h2>2: Configuration Management</h2>
+
+<h2>3: Continuous Integration</h2>
+
+<p>Implementing Continuous Integration
+￼Prerequisites for Continuous Integration
+ Check In Regularly
+Using Continuous Integration Software
+ Bells and Whistles
+Don’t Check In on a Broken Build
+Always Run All Commit Tests Locally before Committing or Get Your CI Server to Do It for You
+Wait for Commit Tests to Pass before Moving On
+Never Go Home on a Broken Build
+Don’t Comment Out Failing Tests
+Take Responsibility for All Breakages That Result from Your Changes
+Test-Driven Development</p>
+
+<h2>4: Implementing a Testing Strategy</h2>
+
+<p>Integration Testing
+Process
+Part II: The Deployment Pipeline
+Anatomy of the Deployment Pipeline
+What Is a Deployment Pipeline?
+A Basic Deployment Pipeline
+Deployment Pipeline Practices
+Only Build Your Binaries Once
+Deploy into a Copy of Production
+Commit Stage Best Practices
+The Automated Acceptance Test Gate
+Manual Testing
+Nonfunctional Testing
+Preparing to Release
+Automating Deployment and Release
+Automating Acceptance Tests</p>
+
+<h2>6: Build and Deployment Scripting</h2>
+
+<p>Deployment Scripting
+Deploying and Testing Layers
+Testing Your Environment’s Configuration</p>
+
+<h2>7: The Commit Stage</h2>
+
+<p>Provide Fast, Useful Feedback
+The Artifact Repository
+Avoid the User Interface</p>
+
+<h2>8: Automated Acceptance Testing</h2>
+
+<p>Why Is Automated Acceptance Testing Essential?
+Keeping Acceptance Tests Green
+Deployment Tests
+Acceptance Test Performance</p>
+
+<h2>9: Testing Nonfunctional Requirements</h2>
+
+<p>Programming for Capacity
+Measuring Capacity
+Automating Capacity Testing
+Capacity Testing via the User Interface</p>
+
+<h2>10: Deploying and Releasing Applications</h2>
+
+<p>Creating a Release Strategy
+The Release Plan
+Releasing Products
+Deploying and Promoting Your Application
+The First Deployment
+Orchestration
+Deployments to Staging Environments
+Rolling Back Deployments and Zero-Downtime Releases
+Emergency Fixes
+Continuous Deployment
+Log Deployment Activities
+Don’t Delete the Old Files, Move Them
+Deployment Is the Whole Team’s Responsibility</p>
+
+<h2>11: Managing Infrastructure and Environments</h2>
+
+<p>Understanding the Needs of the Operations Team
+Documentation and Auditing
+Alerts for Abnormal Events
+IT Service Continuity Planning
+Managing Server Provisioning and Configuration
+Provisioning Servers
+Ongoing Management of Servers
+Managing the Configuration of Middleware
+Managing Configuration
+Research the Product
+Examine How Your Middleware Handles State
+The People Who Do the Deployment Should Be Involved in Creating the Deployment Process
+Managing Infrastructure Services
+Virtualization
+Managing Virtual Environments
+Infrastructure in the Cloud
+Platforms in the Cloud
+One Size Doesn’t Have to Fit All
+Criticisms of Cloud Computing
+Monitoring Infrastructure and Applications
+Collecting Data
+Logging
+Creating Dashboards</p>
+
+<h2>12: Managing Data</h2>
+
+<p>Incremental Change
+Versioning Your Database
+Managing Orchestrated Changes
+Rolling Back Databases and Zero-Downtime Releases
+Rolling Back without Losing Data
+Faking the Database for Unit Tests
+Setup and Tear Down
+Coherent Test Scenarios
+Data Management and the Deployment Pipeline
+Data in Acceptance Tests
+Data in Capacity Tests</p>
+
+<h2>13: Managing Components and Dependencies</h2>
+
+<p>Keeping Your Application Releasable
+Branch by Abstraction
+Dependencies
+Dependency Hell
+Managing Libraries
+Components
+The Integration Pipeline
+Managing Dependency Graphs
+Building Dependency Graphs
+Pipelining Dependency Graphs
+When Should We Trigger Builds?
+Cautious Optimism
+Circular Dependencies
+Managing Binaries
+Managing Dependencies with Maven
+Maven Dependency Refactorings</p>
+
+<h2>15: Managing Continuous Delivery</h2>
+
+<p>A Maturity Model for Configuration and Release Management
+How to Use the Maturity Model
+Project Lifecycle
+Identification
+Inception
+Initiation
+Develop and Release
+Operation
+A Risk Management Process
+Risk Management
+Risk Management Timeline
+How to Do a Risk-Management Exercise
+Common Delivery Problems—Their Symptoms and Causes .
+Infrequent or Buggy Deployments
+Poor Application Quality
+Poorly Managed Continuous Integration Process
+Poor Configuration Management
+Compliance and Auditing
+Automation over Documentation
+Enforcing Traceability
+Working in Silos
+Change Management</p>
+
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>02 Mar 2013</span> &raquo; <a href="/2013/03/02/jquery-toronto-conference.html">First JQuery Conference in Toronto</a></li>
+    
+      <li><span>20 Dec 2012</span> &raquo; <a href="/2012/12/20/introduction.html">Introduction</a></li>
+    
+  </ul>
+</div>
+
+  </div>
+
+  <div id="push"></div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p>© Copyright 2013 Sina Jahan.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <a href="http://feeds.feedburner.com/sina-jahan"><img src="/img/feed-icon-28x28.png"
+                                                              alt="Subscribe to RSS Feed"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39279055-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -2,6 +2,9 @@
 layout: post
 title: Continuous Delivery
 code: continuous-delivery
+abstract: We have all done it. That stressful day that out product is scheduled to go to production. Couple of coders
+ working on the last minute fixes and other senior guys trying to configure the environment. I have worked with
+  some smart people and smart teams and even there this was the issue[...]
 ---
 
 {{ page.title }}

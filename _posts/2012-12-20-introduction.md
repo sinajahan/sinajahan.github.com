@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Start a blog on github
-code: blog-github
+title: Introduction
+code: introduction
 ---
 
 {{ page.title }}

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Sina Jahan</title>
+ <link href="http://sinajahan.com/atom.xml" rel="self"/>
+ <link href="http://sinajahan.com/"/>
+ <updated>2013-03-17T19:01:43-04:00</updated>
+ <id>http://sinajahan.com/</id>
+ <author>
+   <name>Sina Jahan</name>
+   <email>info@sinajahan.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>First JQuery Conference in Toronto</title>
+   <link href="http://sinajahan.com/2013/03/02/jquery-toronto-conference.html"/>
+   <updated>2013-03-02T00:00:00-05:00</updated>
+   <id>http://sinajahan.com/2013/03/02/jquery-toronto-conference</id>
+   <content type="html">&lt;h1&gt;First JQuery Conference in Toronto&lt;/h1&gt;
+
+&lt;h3&gt;Day 1&lt;/h3&gt;
+
+&lt;h3&gt;Day 2&lt;/h3&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Continuous Delivery</title>
+   <link href="http://sinajahan.com/2013/01/12/continuous-delivery.html"/>
+   <updated>2013-01-12T00:00:00-05:00</updated>
+   <id>http://sinajahan.com/2013/01/12/continuous-delivery</id>
+   <content type="html">&lt;h1&gt;Continuous Delivery&lt;/h1&gt;
+
+&lt;p&gt;Let's talk about delivery&lt;/p&gt;
+
+&lt;h2&gt;1: The Problem of Delivering Software&lt;/h2&gt;
+
+&lt;p&gt;Antipattern: Deploying Software Manually
+Antipattern: Deploying to a Production-like Environment Only after Development Is Complete
+Antipattern: Manual Configuration Management of Production Environments
+Every Change Should Trigger the Feedback Process
+What Are the Benefits?
+  Reducing Errors, Lowering Stress, Deployment Flexibility, Practice Makes Perfect&lt;/p&gt;
+
+&lt;h2&gt;2: Configuration Management&lt;/h2&gt;
+
+&lt;h2&gt;3: Continuous Integration&lt;/h2&gt;
+
+&lt;p&gt;Implementing Continuous Integration
+￼Prerequisites for Continuous Integration
+ Check In Regularly
+Using Continuous Integration Software
+ Bells and Whistles
+Don’t Check In on a Broken Build
+Always Run All Commit Tests Locally before Committing or Get Your CI Server to Do It for You
+Wait for Commit Tests to Pass before Moving On
+Never Go Home on a Broken Build
+Don’t Comment Out Failing Tests
+Take Responsibility for All Breakages That Result from Your Changes
+Test-Driven Development&lt;/p&gt;
+
+&lt;h2&gt;4: Implementing a Testing Strategy&lt;/h2&gt;
+
+&lt;p&gt;Integration Testing
+Process
+Part II: The Deployment Pipeline
+Anatomy of the Deployment Pipeline
+What Is a Deployment Pipeline?
+A Basic Deployment Pipeline
+Deployment Pipeline Practices
+Only Build Your Binaries Once
+Deploy into a Copy of Production
+Commit Stage Best Practices
+The Automated Acceptance Test Gate
+Manual Testing
+Nonfunctional Testing
+Preparing to Release
+Automating Deployment and Release
+Automating Acceptance Tests&lt;/p&gt;
+
+&lt;h2&gt;6: Build and Deployment Scripting&lt;/h2&gt;
+
+&lt;p&gt;Deployment Scripting
+Deploying and Testing Layers
+Testing Your Environment’s Configuration&lt;/p&gt;
+
+&lt;h2&gt;7: The Commit Stage&lt;/h2&gt;
+
+&lt;p&gt;Provide Fast, Useful Feedback
+The Artifact Repository
+Avoid the User Interface&lt;/p&gt;
+
+&lt;h2&gt;8: Automated Acceptance Testing&lt;/h2&gt;
+
+&lt;p&gt;Why Is Automated Acceptance Testing Essential?
+Keeping Acceptance Tests Green
+Deployment Tests
+Acceptance Test Performance&lt;/p&gt;
+
+&lt;h2&gt;9: Testing Nonfunctional Requirements&lt;/h2&gt;
+
+&lt;p&gt;Programming for Capacity
+Measuring Capacity
+Automating Capacity Testing
+Capacity Testing via the User Interface&lt;/p&gt;
+
+&lt;h2&gt;10: Deploying and Releasing Applications&lt;/h2&gt;
+
+&lt;p&gt;Creating a Release Strategy
+The Release Plan
+Releasing Products
+Deploying and Promoting Your Application
+The First Deployment
+Orchestration
+Deployments to Staging Environments
+Rolling Back Deployments and Zero-Downtime Releases
+Emergency Fixes
+Continuous Deployment
+Log Deployment Activities
+Don’t Delete the Old Files, Move Them
+Deployment Is the Whole Team’s Responsibility&lt;/p&gt;
+
+&lt;h2&gt;11: Managing Infrastructure and Environments&lt;/h2&gt;
+
+&lt;p&gt;Understanding the Needs of the Operations Team
+Documentation and Auditing
+Alerts for Abnormal Events
+IT Service Continuity Planning
+Managing Server Provisioning and Configuration
+Provisioning Servers
+Ongoing Management of Servers
+Managing the Configuration of Middleware
+Managing Configuration
+Research the Product
+Examine How Your Middleware Handles State
+The People Who Do the Deployment Should Be Involved in Creating the Deployment Process
+Managing Infrastructure Services
+Virtualization
+Managing Virtual Environments
+Infrastructure in the Cloud
+Platforms in the Cloud
+One Size Doesn’t Have to Fit All
+Criticisms of Cloud Computing
+Monitoring Infrastructure and Applications
+Collecting Data
+Logging
+Creating Dashboards&lt;/p&gt;
+
+&lt;h2&gt;12: Managing Data&lt;/h2&gt;
+
+&lt;p&gt;Incremental Change
+Versioning Your Database
+Managing Orchestrated Changes
+Rolling Back Databases and Zero-Downtime Releases
+Rolling Back without Losing Data
+Faking the Database for Unit Tests
+Setup and Tear Down
+Coherent Test Scenarios
+Data Management and the Deployment Pipeline
+Data in Acceptance Tests
+Data in Capacity Tests&lt;/p&gt;
+
+&lt;h2&gt;13: Managing Components and Dependencies&lt;/h2&gt;
+
+&lt;p&gt;Keeping Your Application Releasable
+Branch by Abstraction
+Dependencies
+Dependency Hell
+Managing Libraries
+Components
+The Integration Pipeline
+Managing Dependency Graphs
+Building Dependency Graphs
+Pipelining Dependency Graphs
+When Should We Trigger Builds?
+Cautious Optimism
+Circular Dependencies
+Managing Binaries
+Managing Dependencies with Maven
+Maven Dependency Refactorings&lt;/p&gt;
+
+&lt;h2&gt;15: Managing Continuous Delivery&lt;/h2&gt;
+
+&lt;p&gt;A Maturity Model for Configuration and Release Management
+How to Use the Maturity Model
+Project Lifecycle
+Identification
+Inception
+Initiation
+Develop and Release
+Operation
+A Risk Management Process
+Risk Management
+Risk Management Timeline
+How to Do a Risk-Management Exercise
+Common Delivery Problems—Their Symptoms and Causes .
+Infrequent or Buggy Deployments
+Poor Application Quality
+Poorly Managed Continuous Integration Process
+Poor Configuration Management
+Compliance and Auditing
+Automation over Documentation
+Enforcing Traceability
+Working in Silos
+Change Management&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction</title>
+   <link href="http://sinajahan.com/2012/12/20/introduction.html"/>
+   <updated>2012-12-20T00:00:00-05:00</updated>
+   <id>http://sinajahan.com/2012/12/20/introduction</id>
+   <content type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;20 Feb 2013 - Toronto&lt;/p&gt;
+
+
+&lt;p&gt;I have been looking around for a good blogging platform and none of them
+were flexible enough for me. Then I saw mojombo's blog and just forked
+it.&lt;/p&gt;
+
+&lt;h2&gt;Why is it good?&lt;/h2&gt;
+
+&lt;p&gt;For the very first time I can write in &lt;strong&gt;mark down&lt;/strong&gt;. I &lt;em&gt;own&lt;/em&gt; my files
+for the first time.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

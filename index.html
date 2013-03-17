@@ -1,54 +1,35 @@
 ---
 layout: default
-title: Sina Jahan 
+title: Sina Jahan
 ---
 
 <div id="home">
+  {% for index in (0..site.posts.size) %}
   <div class="row-fluid">
     <ul class="thumbnails">
+      {% if {{site.posts[index] %}
       <li class="span12">
-      <div class="thumbnail">
-        <img src="/img/posts/{{ site.posts.last.code }}.png" >
-        <div class="caption">
-          <a href="{{ site.posts.last.url }}">
-            <h3>{{ site.posts.last.title }}</h3>
-          </a>
-          <p>{{ site.posts.last.content }}</p>
-        </div>
-      </div>
-      </li>
-    </ul>
-  </div>
-  {% for post in site.posts %}
-  <div class="row-fluid">
-    <ul class="thumbnails">
-      <li class="span6">
-        <div class="thumbnail">
-          <img src="/img/posts/{{ post.code }}.png" >
-          <div class="caption">
-            <a href="{{ site.posts.url }}">
-              <h3>{{ post.title }}</h3>
-              <span>{{ post.date | date_to_string }}</span>
-            </a>
-            <p>{{ post.content }}</p>
-          </div>
-        </div>
-      </li>
-      <li class="span6">
-        <div class="thumbnail">
-          <img src="/img/posts/{{ post.code }}.png" >
-          <div class="caption">
-            <a href="{{ post.url }}">
-              <h3>{{ post.title }}</h3>
-              <span>{{ post.date | date_to_string }}</span>
-            </a>
-            <p>{{ post.content }}</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+        <a href="{{ site.posts[index].url }}">
+          <div class="thumbnail">
+            <div class="image-container">
+              <img class="post-image" src="/img/posts/{{ site.posts[index].code }}.png">
+            </div>
 
+            <div class="caption">
+              <a href="{{ site.posts[index].url }}">
+                <h3>{{ site.posts[index].title }}</h3>
+                <span>{{ site.posts[index].date | date_to_string}}</span>
+              </a>
+              <br>
+
+              <p>{{ site.posts[index].abstract }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
   {% endfor %}
 
 </div>
