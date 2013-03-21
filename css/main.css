@@ -1,7 +1,12 @@
 #top-me {
-  padding-top: 5em;
-  padding-bottom: 2em;
-  margin-bottom: 1em;
+  padding: 9em 3em 3em;
+  margin-top: -3em;
+  margin-right: -3em;
+  margin-left: -3em;
+
+  /*padding-top: 5em;*/
+  /*padding-bottom: 2em;*/
+  /*margin-bottom: 1em;*/
   /*background-color: PURPLE;*/
   color: lightgray;
   background: url('http://twitter.github.com/bootstrap/assets/img/bs-docs-masthead-pattern.png') repeat center center;
