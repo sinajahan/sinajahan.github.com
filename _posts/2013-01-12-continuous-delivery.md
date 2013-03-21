@@ -2,15 +2,21 @@
 layout: post
 title: Continuous Delivery
 code: continuous-delivery
-abstract: We have all done it. That stressful day that out product is scheduled to go to production. Couple of coders
- working on the last minute fixes and other senior guys trying to configure the environment. I have worked with
-  some smart people and smart teams and even there this was the issue[...]
+abstract: How long would it take your organization to deploy a change that involves just one single line of code?
 ---
 
 {{ page.title }}
 ================
+{{ page.date | date_to_string }}
 
-Let's talk about delivery
+Your product manager wants to have a demo of latest feature and all of a sudden there is stress in you team. All dev team are in the middle of developing something and your senior architect is trying to configure the environment last minute. You need a lot of time and head up in order to have a working software.
+
+> How long would it take your organization to deploy a change that involves just one single line of code?
+>
+> Mary Poppendieck
+
+The same thing happens when you are trying to push a critical fix to production. You have to jump through a lot of hoops
+to get it deployed and fixed and meanwhile you have angry customers.
 
 1: The Problem of Delivering Software
 -------------------------------------

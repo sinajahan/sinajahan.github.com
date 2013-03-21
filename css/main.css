@@ -18,7 +18,7 @@
 }
 
 #sina{
-  width: 70%;
+  width: 90%;
 }
 
 .image-container {
@@ -34,12 +34,32 @@ h1, h2, h3, h4 {
   font-family: 'Sintony', sans-serif;
 }
 
+#post {
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+}
+
+#content {
+  padding-left: 18em;
+  padding-right: 18em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 
 
 
 
 body {
   background: #D9D1C2 url('/img/bg.png');
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+p {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .navbar {
@@ -67,13 +87,13 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
+  margin: 0 auto -120px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-  height: 60px;
+  height: 120px;
 }
 #footer {
   background-color: #1B1B1B;
