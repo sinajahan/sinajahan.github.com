@@ -8,7 +8,45 @@ title: Sina Jahan
   <div class="row-fluid">
     <ul class="thumbnails">
       {% if {{site.posts[index] %}
-      <li class="span12">
+      <li class="span4">
+        <a href="{{ site.posts[index].url }}">
+          <div class="thumbnail">
+            <div class="image-container">
+              <img class="post-image" src="/img/posts/{{ site.posts[index].code }}.png">
+            </div>
+
+            <div class="caption">
+              <a href="{{ site.posts[index].url }}">
+                <h3>{{ site.posts[index].title }}</h3>
+                <span>{{ site.posts[index].date | date_to_string}}</span>
+              </a>
+              <br>
+
+              <p>{{ site.posts[index].abstract }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="span4">
+        <a href="{{ site.posts[index].url }}">
+          <div class="thumbnail">
+            <div class="image-container">
+              <img class="post-image" src="/img/posts/{{ site.posts[index].code }}.png">
+            </div>
+
+            <div class="caption">
+              <a href="{{ site.posts[index].url }}">
+                <h3>{{ site.posts[index].title }}</h3>
+                <span>{{ site.posts[index].date | date_to_string}}</span>
+              </a>
+              <br>
+
+              <p>{{ site.posts[index].abstract }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="span4">
         <a href="{{ site.posts[index].url }}">
           <div class="thumbnail">
             <div class="image-container">
