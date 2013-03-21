@@ -45,10 +45,7 @@ h1, h2, h3, h4 {
 }
 
 #content {
-  padding-left: 18em;
-  padding-right: 18em;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em;
 }
 
 
