@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction
+title: Welcome to my blog. There are many many others, but this one is mine
 code: introduction
 ---
 

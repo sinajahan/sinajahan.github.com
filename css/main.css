@@ -1,3 +1,15 @@
+.listing li span {
+  float: right;
+}
+
+.listing li {
+  list-style: none;
+  padding: 5px 3px;
+  margin: 0;
+  color: #777;
+  border-bottom: 1px solid #eee;
+}
+
 #top-me {
   padding: 9em 3em 3em;
   margin-top: -3em;
@@ -124,6 +136,7 @@ body {
   background-color: #1B1B1B;
   border-top: solid 5px #F10026;
   color: #777;
+  margin-top: 5em;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */

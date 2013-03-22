@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Continuous Delivery
+title: How much time for deploy a single line of code change to production?
 code: continuous-delivery
-abstract: How long would it take your organization to deploy a change that involves just one single line of code?
 ---
 
 {{ page.title }}
