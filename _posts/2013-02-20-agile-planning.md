@@ -2,6 +2,7 @@
 layout: post
 title: Agile Planning
 code: agile-planning
+tag: top
 ---
 
 {{ page.title }}

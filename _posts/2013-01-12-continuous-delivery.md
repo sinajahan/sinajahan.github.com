@@ -1,7 +1,9 @@
 ---
 layout: post
 title: How much time for deploy a single line of code change to production?
+abstract: How much time for deploy a single line of code change to production?
 code: continuous-delivery
+tag: top
 ---
 
 {{ page.title }}
