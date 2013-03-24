@@ -80,9 +80,7 @@
   /*margin-bottom: 1em;*/
   /*background-color: PURPLE;*/
   color: lightgray;
-  background-image: url("/img/blocksbg.png"),-webkit-radial-gradient(50% 50%, 300px 200px, rgba(123,158,204,0.7) 50%, #557 100%);
-  background-position: 0 0,0 0;
-  background-repeat: repeat,no-repeat;
+  background: url("/img/blocksbg.png"), -webkit-radial-gradient(50% 50%, 300px 200px, rgba(245,244,240, 0.7) 50%, #F5F4F0 100%) repeat, no-repeat 0 0, 0 0;
   padding: 7em 3em 2em;
 
 }
