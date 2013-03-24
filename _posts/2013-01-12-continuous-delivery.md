@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How much time for deploy a single line of code change to production?
+title: Continuous Delivery
 abstract: How much time for deploy a single line of code change to production?
 code: continuous-delivery
 tag: top
@@ -19,14 +19,26 @@ Your product manager wants to have a demo of latest feature and all of a sudden 
 The same thing happens when you are trying to push a critical fix to production. You have to jump through a lot of hoops
 to get it deployed and fixed and meanwhile you have angry customers.
 
-1: The Problem of Delivering Software
+The fact is software delivers no revenue until it is in the hands of its users. Our aim is to make the delivery of
+software from the hands of developers into production a reliable, predictable, visible and largely automated process
+ with will understood, quantifiable risks.
+
+Here are a couple of ideas to help you build the same culture in your team.
+
+The Problem
 -------------------------------------
-Antipattern: Deploying Software Manually
-Antipattern: Deploying to a Production-like Environment Only after Development Is Complete
-Antipattern: Manual Configuration Management of Production Environments
-Every Change Should Trigger the Feedback Process
-What Are the Benefits?
-  Reducing Errors, Lowering Stress, Deployment Flexibility, Practice Makes Perfect
+The day of a software release tends to be a tense one. The reason for the nervousness should be clear. There is quite a
+lot to go wrong in this process. It should be an easy task to start your application in a new environment.
+
+**Don't do the deployment manually based on step by step documentation.** The problem with the documentation is it has to make assumption about the level of knowledge of the reader.
+In reality this will not work without pain.
+
+**Don't configure the environment manually.** There are lot of tools for automating these things such as Puppet, Chef, etc. Use one.
+
+> In software, when something is painful, the way to reduce the pain is to do it more frequently.
+>
+> Jez Humble
+
 
 2: Configuration Management
 ---------------------------
