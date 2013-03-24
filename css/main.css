@@ -110,9 +110,14 @@
 }
 
 #sina{
-  width: 60%;
-  margin-top: 2em;
+  width: 50%;
+  margin-top: 1em;
 }
+
+#hi-sina {
+  padding-top: 1em;
+}
+
 
 .image-container {
     background-color: #F5F4F0;
