@@ -10,35 +10,6 @@
   <div id="push"></div>
 </div>
 
-<div id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <p>© Copyright 2013 Sina Jahan.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <a href="http://feeds.feedburner.com/sina-jahan"><img src="/img/feed-icon-28x28.png"
-                                                              alt="Subscribe to RSS Feed"/></a>
-      </div>
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript">
+{% include footer.html %}
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39279055-1']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</body>
-</html>
