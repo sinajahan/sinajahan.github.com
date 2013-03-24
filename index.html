@@ -5,40 +5,7 @@ title: Sina Jahan
 
 <div id="home">
 
-  <div class="container">
-
-    <div class="marketing">
-
-      <h1>New Here?</h1>
-      <p class="marketing-byline">Start with my best posts</p>
-
-      <div class="row-fluid">
-        {% for post in site.tags.top limit:3 %}
-        <a href="{{ post.url }}">
-        <div class="span4">
-          <img class="marketing-img" src="/img/posts/{{ post.code }}.png">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.abstract }}</p>
-        </div>
-        </a>
-        {% endfor %}
-      </div>
-
-      <hr class="soften">
-
-
-    </div>
-
-  </div>
-
-
-  <div class="marketing">
-
-    <h1>Back again?</h1>
-    <p class="marketing-byline">Here is the latest</p>
-  </div>
-
-    <div class="row-fluid">
+  <div class="row-fluid">
     <ul class="thumbnails">
       {% for post in site.posts limit:3 %}
       <li class="span4">
