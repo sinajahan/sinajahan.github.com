@@ -133,6 +133,7 @@ h1, h2, h3, h4 {
 #post {
   background-color: #ffffff;
   border: 1px solid lightgray;
+  margin-top: 2em;
 }
 
 #content {
@@ -153,6 +154,10 @@ body {
 p {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+li {
+  line-height: 30px;
 }
 
 .navbar {
