@@ -7,15 +7,23 @@ code: introduction
 {{ page.title }}
 ================
 
-<p class="meta">20 Feb 2013 - Toronto</p>
+{{ page.date | date_to_string }}
 
-I have been looking around for a good blogging platform and none of them
-were flexible enough for me. Then I saw mojombo's blog and just forked
-it.
+Welcome to my blog. There are many many others like it,
+but this one is mine.  I'm a developer who likes to build stuff. My background
+is quite straightforward: I saw a computer for the first time when I was eight
+and knew right I want to be a part of this. I got my own Commodore-64 at eight
+and have been writing software systems since then. I initially thought I'd
+go into academics but after my masters I started to build a passion around
+building new products.
 
-Why is it good?
------------------------------------------------------
+I am writing this blog as I find myself with a new way of thinking recently.
+I have started to being more opinionated. My whole life I thought being middle
+is the best strategy. You know when ever a subject comes up I was the guy who
+ says the pro and cons. Recently I have started to hate this.
 
-For the very first time I can write in **mark down**. I *own* my files
-for the first time. 
+I think a lot being in the middle is a result of not having the courage to
+stand behind your decision and accepting responsibility.
+
+ Anyway...lets see how it goes :)
 
