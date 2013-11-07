@@ -5,33 +5,10 @@ title: Sina Jahan
 
 <div id="home">
 
-  <div class="row-fluid">
-    <ul class="thumbnails">
-      {% for post in site.posts limit:3 %}
-      <li class="span4">
-        <a href="{{ post.url }}">
-          <div class="thumbnail">
-            <div class="image-container">
-              <img class="post-image" src="/img/posts/{{ post.code }}.png">
-            </div>
-
-            <div class="caption">
-              <a href="{{ post.url }}">
-                <h4>{{ post.title }}</h4>
-                <span>{{ post.date | date_to_string}}</span>
-              </a>
-            </div>
-          </div>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <hr>
   <div class="row">
     <div class=" offset1 span10">
       <ul class="listing">
-        {% for post in site.posts offset:3 %}
+        {% for post in site.posts%}
         <li>
           <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
