@@ -80,7 +80,7 @@
   /*margin-bottom: 1em;*/
   /*background-color: PURPLE;*/
   color: #474646;
-  background: url("/img/blocksbg.png"), -webkit-radial-gradient(50% 50%, 300px 200px, rgba(152,110,118, 0.7) 50%, #986E76 100%) repeat, no-repeat 0 0, 0 0;
+  /*background: url("/img/blocksbg.png"), -webkit-radial-gradient(50% 50%, 300px 200px, rgba(152,110,118, 0.7) 50%, #986E76 100%) repeat, no-repeat 0 0, 0 0;*/
   padding: 7em 3em 2em;
 
 }
@@ -145,7 +145,8 @@ h1, h2, h3, h4 {
 
 
 body {
-  background: #D9D1C2 url('/img/bg.png');
+  background: #f0f0f0 url('/img/bg.png') no-repeat;
+  background-position:right; 
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 27px;
