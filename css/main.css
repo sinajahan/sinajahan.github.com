@@ -1,3 +1,6 @@
+hr {
+  border-top: 1px solid #B6B6B6;
+}
 .github {
   background: url(/img/github.png) no-repeat;
   text-indent: -119988px;
@@ -67,7 +70,7 @@
   padding: 5px 3px;
   margin: 0;
   color: #777;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px dotted #aaa;
 }
 
 #top-me {
@@ -227,3 +230,4 @@ body {
 code {
   font-size: 80%;
 }
+

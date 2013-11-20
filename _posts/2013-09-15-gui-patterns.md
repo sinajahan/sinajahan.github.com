@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some tools to refactore your view logic
+title: Some tools to refactor your view logic
 ---
 
 # 5 GUI Patterns That help to have skinny rails classes
@@ -12,7 +12,7 @@ Big classes can create maintainability problems in application. They are hard to
 
 When I wrote my "hello world" application in Rails I fell in love with [view helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html). You are coding in your erb file and have some logic specific to view. Rails has already provided a place for that. Yay! Lets add a helper in `app/helpers`. For example a simple logic to handle caption of a label: 
 
-````ruby
+````
   module CandidateHelper
   # app/helpers/candidate_helper.rb
   ...
@@ -26,7 +26,7 @@ When I wrote my "hello world" application in Rails I fell in love with [view hel
 
 It was cool to put this in a helper and forget about it. Rails was "magically" loading my method in erb and I could simple call it:
 
-````erb
+````
   <% @candidates.each do |candidate| %>
     <%= caption candidate %><br>
   <% end %>
@@ -34,7 +34,7 @@ It was cool to put this in a helper and forget about it. Rails was "magically" l
 
 After all this was all "convention over configuration" of Rails. After Rails 3 you can easily write tests for your helpers too:
 
-````ruby
+````
   require 'test_helper'
   
   class WelcomeHelperTest < ActionView::TestCase
@@ -55,7 +55,7 @@ related functions to a separate poro object.
 For example imagine the logic of showing the default candidate avatar when user
 has not provided any image.
 
-````ruby
+````
   class CandidateView
     def initialize(candidate)
       @candidat = candidate
@@ -76,7 +76,7 @@ For cleaner codebase I have created a folder `app/view_objects` in my
 rails app and have asked rails to load classes in that folder in my
 `application.rb` file:
 
-````ruby
+````
   ...
   class Application < Rails::Application
     # Custom directories with classes and modules you want to be autoloadable.
@@ -87,7 +87,7 @@ rails app and have asked rails to load classes in that folder in my
 
 And then I use it in my Controller:
 
-````ruby
+````
   class WelcomeController < ApplicationController
     ...
     def index 
@@ -99,7 +99,7 @@ And then I use it in my Controller:
 And finally my view will just call the required method on the `@view`
 object:
 
-````erb
+````
   <%= @view.avatar_name =%>
 ````
 
@@ -134,7 +134,7 @@ them separated in their own class.
 
 The idea came from Avdi Grim in his book [Objects on Rails](http://objectsonrails.com/). The main power of exhibit pattern is when you want to render different partials based on some view logic. Imagine the following code: rendering different partial templates based on a flag on candidate.
 
-````erb
+````
 <% if @candidate.distorted? %>
   <%= render 'distorted' %>
 <% else %>
@@ -166,7 +166,7 @@ Lets add our exhibitors. I have created a folder called exhibits under
 app and have added it in `config.autoload_path` so rails picks it up.
 Here is the exhibit class for distorted:
 
-````ruby
+````
 require 'delegate'
 
 class DistortedExhibit < SimpleDelegator
@@ -189,7 +189,7 @@ In our example I have wrapped the `candidate` model with additional
 method for render body for distorted candidate. Lets add an exhibit for
 pass candidates too:
 
-````ruby
+````
 require 'delegate'
 
 class PassExhibit < SimpleDelegator
@@ -208,7 +208,7 @@ Now the challenge is where to put the logic of using which exhibitor.
 Instead of scattering the if/else statements lets have a single helper
 witch knows which decided which exhibitor(s) apply to a given object:
 
-````ruby
+````
 module ExhibitsHelper
 
   def exhibit(model, context)
@@ -228,7 +228,7 @@ end
 
 I have also added exhibits as a helper to `application_controller.rb` file:
 
-````ruby
+````
 class ApplicationController < ActionController::Base
   ...
   helper :exhibits
@@ -237,7 +237,7 @@ end
 
 Now we can have a much simpler view template:
 
-````erb
+````
 <% candidate = exhibit(@candidate, self) %>
 <%= candidate.render_body %>
 ````
