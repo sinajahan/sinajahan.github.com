@@ -17,7 +17,7 @@ heavily and thought I would share a couple of ideas that we ran into.
 
 
 Lets go with a simple example. We are going to use
-[rollout gem from James Golick](https://github.com/bitlove/rollout). Ryan Bates has a good [episode](http://railscasts.com/episodes/315-rollout-and-degrade) on this. 
+[rollout gem from James Golick](https://github.com/bitlove/rollout). Ryan Bates has a good [episode](http://railscasts.com/episodes/315-rollout-and-degrade) on this.
 
 Imagine we are developing a new flow for users and we need a feature
 toggle for it. Inside one of our controller we will have something like
@@ -30,8 +30,8 @@ this:
         # old flow
       end
     end
-    
-    
+
+
 If the feature is active for this user send them to the new flow.
 Otherwise send the to the old flow.
 
@@ -73,7 +73,7 @@ And here is the definition of `user_in_active_group?`:
 
 As you can see it is only deligating to your group definition.
 
-  
+
 
 Mock out `active?` method in your tests
 ---------------------------------------------------
@@ -88,12 +88,12 @@ Just mock the `active?` method of rollout. Here is how your rspec will look like
       before do
         $rollout.should_receive(:active?).and_return true
       end
-      
+
       it 'new flows'
         #...
       end
     end
-    
+
     context 'old flow' do
       before do
         $rollout.should_receive(:active?).and_return false
@@ -126,7 +126,7 @@ folder:
     Before('@new_flow') do
       $rollout.activate_globally :new_flow
     end
-    
+
     After('@new_flow') do
       $rollout.deactivate_globally :new_flow
     end
@@ -145,10 +145,4 @@ backlog as soon as you introduce a new feature toggle to the code base.
 As you continue with next sprints you will probably forget that you have
 that nasty if/else in the code. That cleanup task will just remind you
 to do some cleanup.
-
-
-    
-
-
-
 

@@ -24,7 +24,7 @@ Pintrest and did some cool hacks on CSS to fix it.
 He is still the coolest kid in the UI devs. He talked about new chrome
 features.  I think a picture or a gif of him was included in half of the other
 presentations. Showed some hacks on Chrome dev tools and gave us Google
-T-Shirts. He made an apology about his post last year that raised a lot of
+T-Shirts! He made an apology about his post last year that raised a lot of
 effort that went to waste.
 
 ### Dave Methvin on Jquery Foundation

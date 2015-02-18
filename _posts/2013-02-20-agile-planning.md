@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Agile Planning
+title: Agile Estimation & Planning Book Review
 code: agile-planning
 tag: top
 ---
@@ -8,6 +8,8 @@ tag: top
 {{ page.title }}
 ================
 {{ page.date | date_to_string }}
+
+I really enjoyed this book by Mike Cohn. Here are some of my notes.
 
 > Planning is everything. Plans are nothing.
 >
@@ -42,7 +44,7 @@ The best way we found to deal with bugs is to fix them on the iteration they get
 As far as the end date of a project is far in the future, we don't feel any pressure and work leisurely.
 The project buffer should represent at least 20% of the total project duration.
 Don't have partially done work: it is hard to measure and it will ruin the trust between customer and team.
-Have in progress as narrow as one card to avoid having developers working on multiple tasks.
+Have in-progress as narrow as one card to avoid having developers working on multiple tasks.
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Continuous Delivery
+title: Continuous Delivery Book Review
 abstract: How much time for deploy a single line of code change to production?
 code: continuous-delivery
 tag: top
@@ -9,6 +9,8 @@ tag: top
 {{ page.title }}
 ================
 {{ page.date | date_to_string }}
+
+I enjoyed this book by Jez Humble very much. Here are some notes that I found interesting while reading it.
 
 Your product manager wants to have a demo of latest feature and all of a sudden there is stress in you team. All dev team are in the middle of developing something and your senior architect is trying to configure the environment last minute. You need a lot of time and head up in order to have a working software.
 
@@ -36,8 +38,6 @@ In reality this will not work without pain.
 **Don't configure the environment manually.** There are lot of tools for automating these things such as Puppet, Chef, etc. Use one.
 
 > In software, when something is painful, the way to reduce the pain is to do it more frequently.
->
-> Jez Humble
 
 ** New Developer's workstation setup should be easy.** It should be possible for a new team member to sit down at a new workstation,
 check out the project's revision control repository, and run a single command to build and deploy the application to a any
@@ -107,11 +107,5 @@ Deployment/Smoke tests
 These are automated tests to show if the deployment went ok or not.
 It will usually touch every part of application in a shallow way.
 
-Deployment Pipeline
-====================
-p176
-
 > Continuous Delivery is more that just a new delivery methodology.
 > It is a new paradigm for running a business that depends on Software.
->
-> Jez Humble
