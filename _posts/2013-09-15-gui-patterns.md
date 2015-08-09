@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Some handy tools to refactor your view logic in Rails 3
+subtitle: Putting views on a diet
 ---
 
 # 5 GUI Patterns That help to have skinny rails classes

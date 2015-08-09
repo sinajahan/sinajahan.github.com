@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First JQuery Conference in Toronto
+subtitle: It was not about JQuery
 code: jqueryto
 ---
 

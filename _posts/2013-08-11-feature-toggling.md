@@ -2,6 +2,7 @@
 layout: post
 title: Couple of points on Feature Toggling
 code: feature-toggling
+subtitle: Keep going without branching
 ---
 
 {{ page.title }}

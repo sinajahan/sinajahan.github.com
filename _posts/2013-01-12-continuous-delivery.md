@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Continuous Delivery Book Review
-abstract: How much time for deploy a single line of code change to production?
+subtitle: How much time for deploy a single line of code change to production?
 code: continuous-delivery
 tag: top
 ---

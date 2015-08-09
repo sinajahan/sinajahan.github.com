@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Agile Estimation & Planning Book Review
+subtitle: Planning is everything. Plans are nothing.
 code: agile-planning
 tag: top
 ---
