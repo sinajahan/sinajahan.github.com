@@ -1,2 +1,15 @@
-markdown: rdiscount
-pygments: true
+# Site settings
+title: sina jahan
+header-img: img/home-bg.jpg
+email: your-email@yourdomain.com
+description: "A Software Craftsmanship Blog"
+url: "http://sinajahan.com"
+twitter_username: sina_jahan
+github_username:  sinajahan
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

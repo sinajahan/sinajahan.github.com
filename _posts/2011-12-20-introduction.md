@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Welcome to my blog
-code: introduction
+subtitle: I am Sina
+author: Sina Jahan
+header-img: "img/post-bg-01.jpg"
 ---
 
 {{ page.title }}

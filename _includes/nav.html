@@ -1,36 +1,31 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <title>{{ page.title }}</title>
-  <meta name="author" content="Sina Jahan"/>
-  <link href="http://feeds.feedburner.com/sina-jahan" rel="alternate" title="Sina Jahan" type="application/atom+xml"/>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- bootstrap -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-  <link href="/css/main.css" rel="stylesheet" media="screen">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
-
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{ site.baseurl }}/">Home</a>
+                </li>
+                {% for page in site.pages %}{% if page.title %}
+                <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+                {% endif %}{% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-  </div>
-</div>
+    <!-- /.container -->
+</nav>
