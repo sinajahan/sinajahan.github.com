@@ -1,11 +1,7 @@
 # Site settings
-title: sina jahan
+title: Sina Jahan's Logs
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "A Software Craftsmanship Blog"
-url: "http://sinajahan.com"
-twitter_username: sina_jahan
-github_username:  sinajahan
+url: "http://sinajahan.github.com"
 
 # Build settings
 markdown: kramdown

@@ -1,6 +1,6 @@
-#Clean Blog by Start Bootstrap - Jekyll Version
+Sina's Logs Blog
 
-The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
+Powered by [Start Bootstrap](http://startbootstrap.com/).
 
 ###[View Live Demo &rarr;](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/)
 
