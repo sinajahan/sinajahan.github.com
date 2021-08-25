@@ -240,11 +240,11 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .section-heading {
-  font-size: 36px;
+  font-size: 30px;
   margin-top: 60px;
   font-weight: 700;
 }
